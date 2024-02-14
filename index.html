@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width. initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.jpg" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <button class="btn" onclick="closemenu()"><menu>Close</menu></button>
+                    </ul>
+                    <button class="btn" onclick="openmenu()"><menu>Menu</menu></button>
+
+                </nav>
+                <div class="header-text">
+                <p>Student At Dayananda Sagar University</p>
+                <h1>Hello! ,<br> I'm <span>Deekshitha M</span> <br>From Bangalore</h1>
+            </div>
+            </div>
+
+
+        </div>
+<!------------------about------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutcol1">
+                        <img src="images/resume_photo.png" width="100%">
+                    </div>
+                    <div class="aboutcol2">
+                        <h1 class="sub-title">About me</h1>
+                        <p font-size="13px" font-style: italic;>As a highly motivated college student
+                             with a strong passion for computer science, 
+                             I have a background in combining technical knowledge 
+                             with exceptional interpersonal skills. 
+                             I'm adept  to deliver optimal solutions. 
+                             I'm also actively involved in organizing successful events
+                              and fostering a sense of community. I demonstrate dedication
+                              to making a positive impact through my volunteer work ,
+                              contributing time and skills to support local animals. In addition, 
+                              I'm majoring in Computer Science, with coursework emphasizing programming languages, algorithms, and data structures.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front End</span><br>HTML, CSS.</li>
+                                <li><span>Back End</span><br>JavaScript.</li>
+                                <li><span>Programming Language</span><br>C(Programming Language), Java, Python.</li>
+                                <li><span>Desining</span><br>AutoCAD, 3D Modeling. </li>
+                                <li><span>Circuit Desining</span><br>Internet of Things, Arduino IDE, Autodesk Tinkercad.</li>
+                                <li><span>Xilinx</span><br>Vivado.</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Bharat intern</span><br>web Developer</li>
+                                <li><span>Bharat intern</span><br>Full Stack Developer</li>
+                                <li><span>ISRO</span><br>Rover Challenge</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Dayananda Sagar University</span><br>B-Tech<br>Computer Science and Engineering <br>specialization with Artifial intelingence and Machine learning <br>2022-2026 </li>
+                                <li><span>SVVN PU College</span><br>PCMB <br>2020-2022</li>
+                                <li><span>Swamy Vivekananda Vidya Nikethana</span><br>schooling (CBSE) <br>2008-2020</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Full Stack Development</h2>
+                        <p>Web pages, Applications, etc,.</p>
+                        <a href="#portfolio">learn more</a>
+                    </div>
+                    <div>
+                        <h2>IOT</h2>
+                        <p>Arduino programming,sensors,motors,etc,.</p>
+                        <a href="#portfolio">learn more</a>
+                    </div>
+                    <div>
+                        <h2>Artificial Intelligence </h2>
+                        <p>Neural Networks, Search Algorithms,etc,.</p>
+                        <a href="#portfolio">learn more</a>
+                    </div>
+                    <div>
+                        <h2>Machine Learning</h2>
+                        <p>to train machines to get better at tasks without explicit programming</p>
+                        <a href="#portfolio">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!---------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list"> 
+            <div class="work">
+                <img src="images/robotic_car.jpg">
+                <div class="layer">
+                    <h3>ORC</h3>
+                    <p>organised robotic car</p>
+                    <a href="https://github.com/Deeksha-manjunathareddy/orc" target="_blank">more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/chatbot1.gif">
+                <div class="layer">
+                    <h3>Banking Chat Bot</h3>
+                    <p>Bot</p>
+                    <a href="https://github.com/Deeksha-manjunathareddy/banking-chat-bot" target="_blank">more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/texteditor2.jpg">
+                <div class="layer">
+                    <h3>Text Editor</h3>
+                    <p>Editor</p>
+                    <a href="https://github.com/Deeksha-manjunathareddy/texteditor" target="_blank">more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/portfolio.jpg">
+                <div class="layer">
+                    <h3>portfolio</h3>
+                    <p>About Me</p>
+                    <a href="#header" target="_blank">more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/smartbridge.jpg">
+                <div class="layer">
+                    <h3>Smart Bridge</h3>
+                    <p>To overcome problems due to <br> Floods</p>
+                    <a href="https://github.com/Deeksha-manjunathareddy/Smart-Bridge" target="_blank">more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/trafficlights.jpg">
+                <div class="layer">
+                    <h3>Trafic lights</h3>
+                    <p>Controlled traffic lights</p>
+                    <a href="https://github.com/Deeksha-manjunathareddy/traffic-lights" target="_blank">more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/minipiano.jpg">
+                <div class="layer">
+                    <h3>Mini Piano</h3>
+                    <p>7 musical tones like <br> sa re ga ma pa da ni sa </p>
+                    <a href="https://github.com/Deeksha-manjunathareddy/sa-ri-ga-ma-pa-da-ni-sa-" target="_blank">more</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/blindstick.jpg">
+                <div class="layer">
+                    <h3>Blind Stick</h3>
+                    <p>can sence the object at certain <br> radiaus and give alert </p>
+                    <a href="https://github.com/Deeksha-manjunathareddy/blind-stick" target="_blank">more</a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://github.com/Deeksha-manjunathareddy" target="_blank" class="btn">see more</a>
+    </div>
+</div>
+
+<!------------------------contact----------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>dekshithamanjunathareddy@gmail.com</p>
+                <p>+919591091366</p><br>
+                <a href="https://www.linkedin.com/in/deekshitha-m-527650216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="ll" target="_blank">Linkedin</a>
+                <br>
+                <a href="images/deekshiha m.pdf" download class="btn btn2" target="_blank">Download CV</a>
+            </div>
+            
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message "></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!--<div class="copyright">
+        <p> Copyright </p>
+    </div>-->
+</div>
+
+
+
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+        </script>
+        <script>
+            var sidemeu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemeu.style.right="0";
+
+            }
+            function closemenu(){
+                sidemeu.style.right="-200px";
+
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxV-G5Nba1PvqVajppFEDVEegrVODutZhWjt31Dg60DUU18hq441yW374cUAGfH1Bc/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML= "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset()
+                    
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
