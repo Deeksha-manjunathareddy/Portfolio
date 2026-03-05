@@ -1,277 +1,391 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width. initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.jpg" alt="logo" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">contact</a></li>
-                        <button class="btn" onclick="closemenu()"><menu>Close</menu></button>
-                    </ul>
-                    <button class="btn" onclick="openmenu()"><menu>Menu</menu></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deekshitha M | AI/ML Portfolio</title>
+    <meta
+      name="description"
+      content="AI/ML portfolio of Deekshitha M: projects, experience, research, and contact."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
 
-                </nav>
-                <div class="header-text">
-                <p>Student At Dayananda Sagar University</p>
-                <h1>Hello! ,<br> I'm <span>Deekshitha M</span> <br>From Bangalore</h1>
-            </div>
-            </div>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <img src="images/logo.jpg" alt="Deekshitha logo" class="logo" />
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#" data-view="home" class="active">Home</a></li>
+            <li><a href="#" data-view="about">About</a></li>
+            <li><a href="#" data-view="skills">Skills</a></li>
+            <li><a href="#" data-view="experience">Experience</a></li>
+            <li><a href="#" data-view="projects">Projects</a></li>
+            <li><a href="#" data-view="research">Research</a></li>
+            <li><a href="#" data-view="education">Education</a></li>
+            <li><a href="#" data-view="contact">Contact</a></li>
+            <li><button class="menu-btn close" onclick="closemenu()">Close</button></li>
+          </ul>
+          <button class="menu-btn" onclick="openmenu()">Menu</button>
+        </nav>
+      </div>
+    </header>
 
+    <main class="container stage" id="stage">
+      <section id="home" class="view active">
+        <div class="hero-grid">
+          <div>
+            <p class="kicker">Bengaluru, Karnataka, India</p>
+            <h1>Deekshitha M</h1>
+            <h2>AI/ML Engineer | Data Analytics | RAG Systems | Embedded AI | Robotics</h2>
+            <p>
+              B.Tech CSE (AI/ML) student at Dayananda Sagar University with hands-on
+              industry experience in RAG pipelines, data analysis, test automation,
+              and applied robotics systems.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="images/Deekshitha_M_Resume.pdf" target="_blank">Resume</a>
+              <a class="btn ghost" href="https://github.com/Deeksha-manjunathareddy" target="_blank">GitHub</a>
+              <a class="btn ghost" href="https://www.linkedin.com/in/deekshitha-manjunath" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          <img src="images/resume_photo.png" alt="Deekshitha M" class="hero-photo" />
+        </div>
+      </section>
 
+      <section id="about" class="view">
+        <h2 class="section-title">About</h2>
+        <div class="about-layout">
+          <p class="lead">
+            AI/ML Engineer with hands-on experience building RAG-based AI agents,
+            software development, and web development in core CSE domains. My work
+            includes end-to-end implementations from data pipelines and model validation
+            to backend integration and deployed applications such as the Online Food
+            Ordering System.
+          </p>
+          <div class="about-cards">
+            <article class="about-card">
+              <img src="images/about/rag_agent.svg" alt="RAG Agent Development" />
+              <h3>RAG Agent Development</h3>
+              <p>Built RAG workflows and LLM-powered Q&A agent systems with evaluation pipelines.</p>
+            </article>
+            <article class="about-card">
+              <img src="images/about/web_dev.svg" alt="Web Development" />
+              <h3>Web Development</h3>
+              <p>Developed full-stack web solutions, including the Online Food Ordering System.</p>
+            </article>
+            <article class="about-card">
+              <img src="images/about/ai_ml.svg" alt="AI and Machine Learning" />
+              <h3>AI/ML</h3>
+              <p>Model building, validation, and practical deployment for real-world use cases.</p>
+            </article>
+            <article class="about-card">
+              <img src="images/about/embedded.svg" alt="Embedded Systems and Robotics" />
+              <h3>Embedded and Robotics</h3>
+              <p>Rover systems, IoT prototyping, and embedded integration using Arduino and ROS.</p>
+            </article>
+          </div>
         </div>
-<!------------------about------------>
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="aboutcol1">
-                        <img src="images/resume_photo.png" width="100%">
-                    </div>
-                    <div class="aboutcol2">
-                        <h1 class="sub-title">About me</h1>
-                        <p font-size="13px" font-style: italic;>As a highly motivated college student
-                             with a strong passion for computer science, 
-                             I have a background in combining technical knowledge 
-                             with exceptional interpersonal skills. 
-                             I'm adept  to deliver optimal solutions. 
-                             I'm also actively involved in organizing successful events
-                              and fostering a sense of community. I demonstrate dedication
-                              to making a positive impact through my volunteer work ,
-                              contributing time and skills to support local animals. In addition, 
-                              I'm majoring in Computer Science, with coursework emphasizing programming languages, algorithms, and data structures.
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Front End</span><br>HTML, CSS.</li>
-                                <li><span>Back End</span><br>JavaScript.</li>
-                                <li><span>Programming Language</span><br>C(Programming Language), Java, Python.</li>
-                                <li><span>Desining</span><br>AutoCAD, 3D Modeling. </li>
-                                <li><span>Circuit Desining</span><br>Internet of Things, Arduino IDE, Autodesk Tinkercad.</li>
-                                <li><span>Xilinx</span><br>Vivado.</li>
-                                
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Bharat intern</span><br>web Developer</li>
-                                <li><span>Bharat intern</span><br>Full Stack Developer</li>
-                                <li><span>ISRO</span><br>Rover Challenge</li>
-                                
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Dayananda Sagar University</span><br>B-Tech<br>Computer Science and Engineering <br>specialization with Artifial intelingence and Machine learning <br>2022-2026 </li>
-                                <li><span>SVVN PU College</span><br>PCMB <br>2020-2022</li>
-                                <li><span>Swamy Vivekananda Vidya Nikethana</span><br>schooling (CBSE) <br>2008-2020</li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </section>
+
+      <section id="skills" class="view">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <article>
+            <h3>Languages</h3>
+            <p>Python, Java, R, C, C++, JavaScript, SQL, PHP, HTML, CSS</p>
+          </article>
+          <article>
+            <h3>ML / AI</h3>
+            <p>Scikit-learn, TensorFlow, YOLOv8, Pandas, NumPy, Matplotlib, RAG, LiteLLM</p>
+          </article>
+          <article>
+            <h3>Core Engineering</h3>
+            <p>DSA, OOP, REST APIs, Backend Development, Debugging, Testing, EDA</p>
+          </article>
+          <article>
+            <h3>Embedded / Robotics</h3>
+            <p>Arduino, Raspberry Pi, NodeMCU, ROS 2, IoT prototyping</p>
+          </article>
+          <article>
+            <h3>Automation / Testing</h3>
+            <p>Playwright, Selenium, evaluation pipelines, benchmark workflows</p>
+          </article>
+          <article>
+            <h3>Tools</h3>
+            <p>Git/GitHub, JIRA, Xilinx Vivado, MATLAB, AutoCAD, Keil</p>
+          </article>
         </div>
-        <!----------------------------services-->
-        <div id="services">
-            <div class="container">
-                <h1 class="sub-title">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <h2>Full Stack Development</h2>
-                        <p>Web pages, Applications, etc,.</p>
-                        <a href="#portfolio">learn more</a>
-                    </div>
-                    <div>
-                        <h2>IOT</h2>
-                        <p>Arduino programming,sensors,motors,etc,.</p>
-                        <a href="#portfolio">learn more</a>
-                    </div>
-                    <div>
-                        <h2>Artificial Intelligence </h2>
-                        <p>Neural Networks, Search Algorithms,etc,.</p>
-                        <a href="#portfolio">learn more</a>
-                    </div>
-                    <div>
-                        <h2>Machine Learning</h2>
-                        <p>to train machines to get better at tasks without explicit programming</p>
-                        <a href="#portfolio">learn more</a>
-                    </div>
-                </div>
-            </div>
+      </section>
+
+      <section id="experience" class="view">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <article>
+            <h3>AI Engineer | Conel Labs</h3>
+            <p class="meta">Jul 2025 - Present | Bengaluru</p>
+            <ul>
+              <li>Built AI platform using Python, RAG pipelines, LiteLLM, and Playwright.</li>
+              <li>Implemented LLM-powered Q&A agent and quality evaluation pipeline.</li>
+              <li>Developed API integrations for agent communication, logging, and monitoring.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>MCP Engineer | Team Trixanth</h3>
+            <p class="meta">Jul 2024 - Mar 2026 | Bengaluru</p>
+            <ul>
+              <li>Contributed to rover systems engineering and robotics integration.</li>
+              <li>Worked on modular rover architecture for funded research projects.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Data Analyst and ML Engineer | CHETASee</h3>
+            <p class="meta">Aug 2024 - Nov 2024 | Bengaluru</p>
+            <ul>
+              <li>Built preprocessing pipelines for multi-source datasets.</li>
+              <li>Performed SQL/Python analysis and ML algorithm evaluation.</li>
+              <li>Conducted EDA to identify trends, patterns, and anomalies.</li>
+            </ul>
+          </article>
         </div>
-<!---------------portfolio------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list"> 
-            <div class="work">
-                <img src="images/robotic_car.jpg">
-                <div class="layer">
-                    <h3>ORC</h3>
-                    <p>organised robotic car</p>
-                    <a href="https://github.com/Deeksha-manjunathareddy/orc" target="_blank">more</a>
-                </div>
+      </section>
+
+      <section id="projects" class="view">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-sections">
+          <div class="project-block">
+            <h3 class="project-group-title">Funded Projects</h3>
+            <div class="projects-grid">
+              <article class="project-card"><img src="images/projects/stethoscope.svg" alt="Digital Stethoscope" /><h3>Digital Stethoscope</h3><p>Designed a smart digital stethoscope system with custom hardware for heart sound acquisition, BLE-based mobile app integration, and hybrid DL models for automated heart murmur detection.</p><p class="project-note">Team Role: Team Lead | Funded by: DSC and KSCST | Guided by: Cardiology Department, CDSIMER</p><a href="images/Deekshitha_M_Resume.pdf" target="_blank">Reference</a></article>
+              <article class="project-card"><img src="images/projects/gait.jpg" alt="Gait Project" /><h3>Gait Analysis</h3><p>Developed an ear-wearable hardware prototype that can monitor and record a person's movement patterns for gait analysis.</p><p class="project-note">Team: 2 members | Funded and Guided by: Physiology Department, DSU</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7357635104879382528/" target="_blank">Reference</a></article>
+              <article class="project-card"><img src="images/projects/rover.jpg" alt="Rover" /><h3>Rover - Team Trixanth</h3><p>Real-time exploration rover for field and research workflows.</p><p class="project-note">Team Role: Locomotion Head | Funded by: DSU and CSST | Guided by: DSU</p><a href="https://team-trixanth.github.io/Team-Trixanth/index.html" target="_blank">Reference</a></article>
             </div>
-            <div class="work">
-                <img src="images/chatbot1.gif">
-                <div class="layer">
-                    <h3>Banking Chat Bot</h3>
-                    <p>Bot</p>
-                    <a href="https://github.com/Deeksha-manjunathareddy/banking-chat-bot" target="_blank">more</a>
-                </div>
+          </div>
+
+          <div class="project-block">
+            <h3 class="project-group-title">Academic Projects</h3>
+            <div class="projects-grid">
+              <article class="project-card"><img src="images/projects/vehicle_detection.svg" alt="Real-Time Vehicle Detection" /><h3>Real-Time Vehicle Detection</h3><p>MLOPs-enabled real-time vehicle detection using YOLOv8 for image detection </p><a href="https://huggingface.co/spaces/gayatrigovindasetty/vehicle-detection" target="_blank">Reference</a></article>
+              <article class="project-card"><img src="images/projects/research_automation.svg" alt="Gen AI Research Automation" /><h3>Gen AI Research Automation System</h3><p>Automates research assistance workflows using Gen AI methods uses web scraping for data.</p><a href="https://genairesearchscientist-mtmmrrzznx87qvn2l3dogs.streamlit.app/" target="_blank">Reference</a></article>
+              <article class="project-card"><img src="images/projects/baby_monitor.svg" alt="Baby Monitoring" /><h3>Baby Monitoring System</h3><p>Detects crying and auto-moves cradle for baby comfort.</p><a href="https://github.com/Deeksha-manjunathareddy/Baby_monitaring_sytem" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/food_ordering.svg" alt="Online Food Ordering" /><h3>Online Food Ordering</h3><p>Responsive frontend + JS backend flow + SQL via PHP.</p><a href="https://github.com/Deeksha-manjunathareddy/onlinefood_order-database_manegment_system" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/orc.svg" alt="ORC" /><h3>ORC</h3><p>Robotic car with motion detection and gas sensing.</p><a href="https://github.com/Deeksha-manjunathareddy/orc" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/smart_bridge.svg" alt="Smart Bridge" /><h3>Smart Bridge</h3><p>Automated flood-safety bridge concept.</p><a href="https://github.com/Deeksha-manjunathareddy/Smart-Bridge" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/banking_chatbot.svg" alt="Banking Chatbot" /><h3>Banking Chatbot</h3><p>Intent-style Python chatbot for banking queries.</p><a href="https://github.com/Deeksha-manjunathareddy/banking-chat-bot" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/text_editor.svg" alt="Text Editor" /><h3>Text Editor</h3><p>Java text editor with file operations and shortcuts.</p><a href="https://github.com/Deeksha-manjunathareddy/texteditor" target="_blank">GitHub</a></article>
             </div>
-            <div class="work">
-                <img src="images/texteditor2.jpg">
-                <div class="layer">
-                    <h3>Text Editor</h3>
-                    <p>Editor</p>
-                    <a href="https://github.com/Deeksha-manjunathareddy/texteditor" target="_blank">more</a>
-                </div>
+          </div>
+
+          <div class="project-block">
+            <h3 class="project-group-title">Experimental Projects</h3>
+            <div class="projects-grid">
+              <article class="project-card"><img src="images/projects/traffic_lights.svg" alt="Traffic Lights" /><h3>Traffic Lights</h3><p>Signal control automation prototype.</p><a href="https://github.com/Deeksha-manjunathareddy/traffic-lights" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/mini_piano.svg" alt="Mini Piano" /><h3>Mini Piano</h3><p>Multi-tone mini piano embedded prototype.</p><a href="https://github.com/Deeksha-manjunathareddy/sa-ri-ga-ma-pa-da-ni-sa-" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/blind_stick.svg" alt="Blind Stick" /><h3>Blind Stick</h3><p>Obstacle sensing stick with alert mechanism.</p><a href="https://github.com/Deeksha-manjunathareddy/blind-stick" target="_blank">GitHub</a></article>
+              <article class="project-card"><img src="images/projects/portfolio_site.svg" alt="Portfolio" /><h3>Portfolio</h3><p>Personal portfolio website showcasing projects, experience, and research.</p><a href="https://github.com/Deeksha-manjunathareddy/Portfolio" target="_blank">Reference</a></article>
             </div>
-            <div class="work">
-                <img src="images/portfolio.jpg">
-                <div class="layer">
-                    <h3>portfolio</h3>
-                    <p>About Me</p>
-                    <a href="#header" target="_blank">more</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/smartbridge.jpg">
-                <div class="layer">
-                    <h3>Smart Bridge</h3>
-                    <p>To overcome problems due to <br> Floods</p>
-                    <a href="https://github.com/Deeksha-manjunathareddy/Smart-Bridge" target="_blank">more</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/trafficlights.jpg">
-                <div class="layer">
-                    <h3>Trafic lights</h3>
-                    <p>Controlled traffic lights</p>
-                    <a href="https://github.com/Deeksha-manjunathareddy/traffic-lights" target="_blank">more</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/minipiano.jpg">
-                <div class="layer">
-                    <h3>Mini Piano</h3>
-                    <p>7 musical tones like <br> sa re ga ma pa da ni sa </p>
-                    <a href="https://github.com/Deeksha-manjunathareddy/sa-ri-ga-ma-pa-da-ni-sa-" target="_blank">more</a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/blindstick.jpg">
-                <div class="layer">
-                    <h3>Blind Stick</h3>
-                    <p>can sence the object at certain <br> radiaus and give alert </p>
-                    <a href="https://github.com/Deeksha-manjunathareddy/blind-stick" target="_blank">more</a>
-                </div>
-            </div>
-            
+          </div>
         </div>
-        <a href="https://github.com/Deeksha-manjunathareddy" target="_blank" class="btn">see more</a>
+      </section>
+
+      <section id="research" class="view">
+        <h2 class="section-title">Research and Awards</h2>
+        <div class="split-grid">
+          <article>
+            <h3>Publications</h3>
+            <div class="publication-list">
+              <div class="publication-item">
+                <div class="publication-content">
+                  <p>A Power-Efficient, Modular Rover Design for Multi-Purpose Exploration</p>
+                  <p class="paper-meta"><strong>Published in:</strong> 2025 IEEE Space, Aerospace and Defence Conference (SPACE)</p>
+                  <p class="paper-meta"><strong>Date of Conference:</strong> 21-23 July 2025</p>
+                  <p class="paper-meta"><strong>Date Added to IEEE Xplore:</strong> 25 September 2025</p>
+                  <p class="paper-meta"><strong>ISBN Information:</strong> Available on IEEE Xplore page</p>
+                  <p class="paper-meta"><strong>Role:</strong> 1st Author</p>
+                  <p class="paper-meta"><strong>DOI:</strong> 10.1109/SPACE65882.2025.11170625</p>
+                  <p class="paper-meta"><strong>Publisher:</strong> IEEE</p>
+                  <p class="paper-meta"><strong>Conference Location:</strong> Bangalore, India</p>
+                </div>
+                <a class="paper-btn" href="https://ieeexplore.ieee.org/document/11170625" target="_blank">Find Paper Here</a>
+              </div>
+              <div class="publication-item">
+                <div class="publication-content">
+                  <p>Optimizing Communication in ROS 2 With QoS Parameters for System Advantages</p>
+                  <p class="paper-meta"><strong>Published in:</strong> 2025 IEEE Space, Aerospace and Defence Conference (SPACE)</p>
+                  <p class="paper-meta"><strong>Date of Conference:</strong> 21-23 July 2025</p>
+                  <p class="paper-meta"><strong>Date Added to IEEE Xplore:</strong> 25 September 2025</p>
+                  <p class="paper-meta"><strong>ISBN Information:</strong> Available on IEEE Xplore page</p>
+                  <p class="paper-meta"><strong>Role:</strong> Co-Author</p>
+                  <p class="paper-meta"><strong>DOI:</strong> 10.1109/SPACE65882.2025.11171196</p>
+                  <p class="paper-meta"><strong>Publisher:</strong> IEEE</p>
+                  <p class="paper-meta"><strong>Conference Location:</strong> Bangalore, India</p>
+                </div>
+                <a class="paper-btn" href="https://ieeexplore.ieee.org/document/11171196" target="_blank">Find Paper Here</a>
+              </div>
+            </div>
+          </article>
+          <div class="research-side">
+            <article>
+              <h3>Awards</h3>
+              <ul>
+                <li>Finalists in IRC for both 2024-2025 and 2025-2026 - Team Trixanth.</li>
+                <li>KSCST SPP - Project selected for research funding.</li>
+                <li>IEEE Women in Engineering scholarship received for two consecutive years: INR 50,000 each year, with IEEE free courses benefits.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Certifications</h3>
+              <ul>
+                <li>Embedded Linux for IoT Systems - IEEE Blended Learning Program</li>
+                <li>Linux for Beginners, Linux Practical: App Development with Linux - Infosys Springboard</li>
+                <li>Introduction to NLP, AI, Data Science, Deep learning - Infosys Springboard</li>
+                <li>Introduction to Robotic Process Automation - Infosys Springboard</li>
+                <li>Career Bridge: Learn, Grow and Collaborate - Wadhwani Foundation</li>
+                <li>Machine Learning - IEEE Blended Learning Program</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="view">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <article><h3>Dayananda Sagar University</h3><p class="meta">B.Tech CSE (AI/ML) | 2022 - 2026 | Engineering CGPA (up to 7th sem): 9.17/10</p></article>
+          <article><h3>S V V N PU College</h3><p class="meta">PCMB | 2020 - 2022 | Percentage: 86.1%</p></article>
+          <article><h3>Swamy Vivekananda Vidya Nikethana</h3><p class="meta">CBSE | 2008 - 2020</p></article>
+        </div>
+      </section>
+
+      <section id="contact" class="view">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Email:</strong> imdeekshitham@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deekshitha-manjunath" target="_blank">deekshitha-manjunath</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Deeksha-manjunathareddy" target="_blank">Deeksha-manjunathareddy</a></p>
+          </div>
+          <div class="contact-right">
+            <form name="contact-form">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <input type="hidden" name="_subject" value="Portfolio contact message" />
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="switcher">
+      <button id="prevView" class="switch-btn">Prev</button>
+      <button id="nextView" class="switch-btn">Next</button>
     </div>
-</div>
 
-<!------------------------contact----------------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p>dekshithamanjunathareddy@gmail.com</p>
-                <p>+919591091366</p><br>
-                <a href="https://www.linkedin.com/in/deekshitha-m-527650216?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="ll" target="_blank">Linkedin</a>
-                <br>
-                <a href="images/deekshiha m.pdf" download class="btn btn2" target="_blank">Download CV</a>
-            </div>
-            
+    <script>
+      const sidemenu = document.getElementById("sidemenu");
+      function openmenu() { sidemenu.style.right = "0"; }
+      function closemenu() { sidemenu.style.right = "-230px"; }
 
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message "></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <!--<div class="copyright">
-        <p> Copyright </p>
-    </div>-->
-</div>
+      const views = [...document.querySelectorAll(".view")];
+      const navLinks = [...document.querySelectorAll("[data-view]")];
+      let currentIndex = 0;
 
+      function animateViewCards(viewEl) {
+        const cards = viewEl.querySelectorAll(".skills-grid article, .about-card, .project-card, .timeline article, .split-grid article");
+        cards.forEach((card, i) => {
+          card.style.setProperty("--d", `${i * 70}ms`);
+          card.classList.remove("reveal-card", "card-in");
+          void card.offsetWidth;
+          card.classList.add("reveal-card", "card-in");
+        });
+      }
 
+      function showView(id) {
+        const targetIndex = views.findIndex((v) => v.id === id);
+        if (targetIndex === -1) return;
+        currentIndex = targetIndex;
+        views.forEach((v, i) => v.classList.toggle("active", i === currentIndex));
+        navLinks.forEach((a) => a.classList.toggle("active", a.dataset.view === id));
+        animateViewCards(views[currentIndex]);
+        closemenu();
+      }
 
+      navLinks.forEach((a) => {
+        a.addEventListener("click", (e) => {
+          e.preventDefault();
+          showView(a.dataset.view);
+        });
+      });
 
+      document.getElementById("prevView").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + views.length) % views.length;
+        showView(views[currentIndex].id);
+      });
 
+      document.getElementById("nextView").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % views.length;
+        showView(views[currentIndex].id);
+      });
 
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") document.getElementById("nextView").click();
+        if (e.key === "ArrowLeft") document.getElementById("prevView").click();
+      });
 
+      animateViewCards(views[currentIndex]);
+    </script>
 
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
+    <script>
+      const form = document.forms["contact-form"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = form.elements["Name"].value.trim();
+        const email = form.elements["Email"].value.trim();
+        const message = form.elements["Message"].value.trim();
+        msg.textContent = "Sending...";
+
+        fetch("https://formsubmit.co/ajax/imdeekshitham@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify({
+            Name: name,
+            Email: email,
+            Message: message,
+            _subject: "Portfolio contact message",
+            _replyto: email,
+            _template: "table",
+            _captcha: "false"
+          })
+        })
+          .then((res) => {
+            if (!res.ok) throw new Error("submit failed");
+            return res.json();
+          })
+          .then((data) => {
+            if (!(data && (data.success === "true" || data.success === true))) {
+              throw new Error(data && data.message ? data.message : "Submission was not accepted");
             }
-
-
-        </script>
-        <script>
-            var sidemeu=document.getElementById("sidemenu");
-            function openmenu(){
-                sidemeu.style.right="0";
-
-            }
-            function closemenu(){
-                sidemeu.style.right="-200px";
-
-            }
-        </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxV-G5Nba1PvqVajppFEDVEegrVODutZhWjt31Dg60DUU18hq441yW374cUAGfH1Bc/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg=document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML= "Message Sent Successfully"
-                    setTimeout(function(){
-                        msg.innerHTML= ""
-                    },5000)
-                    form.reset()
-                    
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-    </body>
+            msg.textContent = "Message sent successfully.";
+            form.reset();
+            setTimeout(() => (msg.textContent = ""), 5000);
+          })
+          .catch((err) => {
+            msg.textContent = `Could not send: ${err.message}. Check FormSubmit activation email/spam.`;
+            setTimeout(() => (msg.textContent = ""), 5000);
+          });
+      });
+    </script>
+  </body>
 </html>
