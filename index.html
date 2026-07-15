@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-orb orb-a"></div>
-    <div class="bg-orb orb-b"></div>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="background_video.mp4" type="video/mp4">
+    </video>
 
     <header class="topbar">
       <div class="container nav-wrap">
-        <img src="images/logo.jpg" alt="Deekshitha logo" class="logo" />
+        <img src=""  class="logo" />
         <nav>
           <ul id="sidemenu">
             <li><a href="#" data-view="home" class="active">Home</a></li>
@@ -26,6 +27,7 @@
             <li><a href="#" data-view="experience">Experience</a></li>
             <li><a href="#" data-view="projects">Projects</a></li>
             <li><a href="#" data-view="research">Research</a></li>
+            <li><a href="#" data-view="awards">Awards</a></li>
             <li><a href="#" data-view="education">Education</a></li>
             <li><a href="#" data-view="contact">Contact</a></li>
             <li><button class="menu-btn close" onclick="closemenu()">Close</button></li>
@@ -117,7 +119,7 @@
           </article>
           <article>
             <h3>Tools</h3>
-            <p>Git/GitHub, JIRA, Xilinx Vivado, MATLAB, AutoCAD, Keil</p>
+            <p>Git/GitHub, JIRA, Xilinx Vivado, MATLAB, AutoCAD, Apache Hadoop</p>
           </article>
         </div>
       </section>
@@ -134,14 +136,14 @@
               <li>Developed API integrations for agent communication, logging, and monitoring.</li>
             </ul>
           </article>
-          <article>
+          <!-- <article>
             <h3>MCP Engineer | Team Trixanth</h3>
             <p class="meta">Jul 2024 - Mar 2026 | Bengaluru</p>
             <ul>
               <li>Contributed to rover systems engineering and robotics integration.</li>
               <li>Worked on modular rover architecture for funded research projects.</li>
             </ul>
-          </article>
+          </article> -->
           <article>
             <h3>Data Analyst and ML Engineer | CHETASee</h3>
             <p class="meta">Aug 2024 - Nov 2024 | Bengaluru</p>
@@ -160,7 +162,7 @@
           <div class="project-block">
             <h3 class="project-group-title">Funded Projects</h3>
             <div class="projects-grid">
-              <article class="project-card"><img src="images/projects/stethoscope.svg" alt="Digital Stethoscope" /><h3>Digital Stethoscope</h3><p>Designed a smart digital stethoscope system with custom hardware for heart sound acquisition, BLE-based mobile app integration, and hybrid DL models for automated heart murmur detection.</p><p class="project-note">Team Role: Team Lead | Funded by: DSC and KSCST | Guided by: Cardiology Department, CDSIMER</p><a href="images/Deekshitha_M_Resume.pdf" target="_blank">Reference</a></article>
+              <article class="project-card"><img src="images/projects/stethoscope.jpeg" alt="Digital Stethoscope" /><h3>Digital Stethoscope</h3><p>Designed a smart digital stethoscope system with custom hardware for heart sound acquisition, BLE-based mobile app integration, and hybrid DL models for automated heart murmur detection.</p><p class="project-note">Team Role: Team Lead | Funded by: DSC and KSCST | Guided by: Cardiology Department, CDSIMER</p><a href="images/Deekshitha_M_Resume.pdf" target="_blank">Reference</a></article>
               <article class="project-card"><img src="images/projects/gait.jpg" alt="Gait Project" /><h3>Gait Analysis</h3><p>Developed an ear-wearable hardware prototype that can monitor and record a person's movement patterns for gait analysis.</p><p class="project-note">Team: 2 members | Funded and Guided by: Physiology Department, DSU</p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7357635104879382528/" target="_blank">Reference</a></article>
               <article class="project-card"><img src="images/projects/rover.jpg" alt="Rover" /><h3>Rover - Team Trixanth</h3><p>Real-time exploration rover for field and research workflows.</p><p class="project-note">Team Role: Locomotion Head | Funded by: DSU and CSST | Guided by: DSU</p><a href="https://team-trixanth.github.io/Team-Trixanth/index.html" target="_blank">Reference</a></article>
             </div>
@@ -193,62 +195,97 @@
       </section>
 
       <section id="research" class="view">
-        <h2 class="section-title">Research and Awards</h2>
-        <div class="split-grid">
-          <article>
-            <h3>Publications</h3>
-            <div class="publication-list">
-              <div class="publication-item">
-                <div class="publication-content">
-                  <p>A Power-Efficient, Modular Rover Design for Multi-Purpose Exploration</p>
-                  <p class="paper-meta"><strong>Published in:</strong> 2025 IEEE Space, Aerospace and Defence Conference (SPACE)</p>
-                  <p class="paper-meta"><strong>Date of Conference:</strong> 21-23 July 2025</p>
-                  <p class="paper-meta"><strong>Date Added to IEEE Xplore:</strong> 25 September 2025</p>
-                  <p class="paper-meta"><strong>ISBN Information:</strong> Available on IEEE Xplore page</p>
-                  <p class="paper-meta"><strong>Role:</strong> 1st Author</p>
-                  <p class="paper-meta"><strong>DOI:</strong> 10.1109/SPACE65882.2025.11170625</p>
-                  <p class="paper-meta"><strong>Publisher:</strong> IEEE</p>
-                  <p class="paper-meta"><strong>Conference Location:</strong> Bangalore, India</p>
-                </div>
-                <a class="paper-btn" href="https://ieeexplore.ieee.org/document/11170625" target="_blank">Find Paper Here</a>
+        <h2 class="section-title">Research</h2>
+        <p class="section-lead">Published conference papers and peer-reviewed work.</p>
+        <div class="publications-grid">
+          <article class="paper-card">
+            <a class="paper-preview-wrap" href="https://ieeexplore.ieee.org/document/11170625" target="_blank" rel="noopener">
+              <img src="images/research/paper_rover.png" alt="Preview: A Power-Efficient, Modular Rover Design" class="paper-preview" />
+              <span class="paper-preview-label">View on IEEE Xplore</span>
+            </a>
+            <div class="paper-body">
+              <div class="paper-tags">
+                <span class="paper-tag">1st Author</span>
+                <span class="paper-tag">IEEE SPACE 2025</span>
               </div>
-              <div class="publication-item">
-                <div class="publication-content">
-                  <p>Optimizing Communication in ROS 2 With QoS Parameters for System Advantages</p>
-                  <p class="paper-meta"><strong>Published in:</strong> 2025 IEEE Space, Aerospace and Defence Conference (SPACE)</p>
-                  <p class="paper-meta"><strong>Date of Conference:</strong> 21-23 July 2025</p>
-                  <p class="paper-meta"><strong>Date Added to IEEE Xplore:</strong> 25 September 2025</p>
-                  <p class="paper-meta"><strong>ISBN Information:</strong> Available on IEEE Xplore page</p>
-                  <p class="paper-meta"><strong>Role:</strong> Co-Author</p>
-                  <p class="paper-meta"><strong>DOI:</strong> 10.1109/SPACE65882.2025.11171196</p>
-                  <p class="paper-meta"><strong>Publisher:</strong> IEEE</p>
-                  <p class="paper-meta"><strong>Conference Location:</strong> Bangalore, India</p>
-                </div>
-                <a class="paper-btn" href="https://ieeexplore.ieee.org/document/11171196" target="_blank">Find Paper Here</a>
-              </div>
+              <h3>A Power-Efficient, Modular Rover Design for Multi-Purpose Exploration</h3>
+              <p class="paper-summary">2025 IEEE Space, Aerospace and Defence Conference (SPACE) · Bangalore, India · 21–23 July 2025</p>
+              <dl class="paper-facts">
+                <div><dt>DOI</dt><dd>10.1109/SPACE65882.2025.11170625</dd></div>
+                <div><dt>Publisher</dt><dd>IEEE</dd></div>
+              </dl>
+              <details class="paper-details-toggle">
+                <summary>More details</summary>
+                <dl class="paper-facts paper-facts-extra">
+                  <div><dt>Added to Xplore</dt><dd>25 September 2025</dd></div>
+                  <div><dt>ISBN</dt><dd>Available on IEEE Xplore page</dd></div>
+                </dl>
+              </details>
+              <a class="btn paper-link" href="https://ieeexplore.ieee.org/document/11170625" target="_blank" rel="noopener">Read Paper</a>
             </div>
           </article>
-          <div class="research-side">
-            <article>
-              <h3>Awards</h3>
-              <ul>
-                <li>Finalists in IRC for both 2024-2025 and 2025-2026 - Team Trixanth.</li>
-                <li>KSCST SPP - Project selected for research funding.</li>
-                <li>IEEE Women in Engineering scholarship received for two consecutive years: INR 50,000 each year, with IEEE free courses benefits.</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Certifications</h3>
-              <ul>
-                <li>Embedded Linux for IoT Systems - IEEE Blended Learning Program</li>
-                <li>Linux for Beginners, Linux Practical: App Development with Linux - Infosys Springboard</li>
-                <li>Introduction to NLP, AI, Data Science, Deep learning - Infosys Springboard</li>
-                <li>Introduction to Robotic Process Automation - Infosys Springboard</li>
-                <li>Career Bridge: Learn, Grow and Collaborate - Wadhwani Foundation</li>
-                <li>Machine Learning - IEEE Blended Learning Program</li>
-              </ul>
-            </article>
-          </div>
+
+          <article class="paper-card">
+            <a class="paper-preview-wrap" href="https://ieeexplore.ieee.org/document/11171196" target="_blank" rel="noopener">
+              <img src="images/research/paper_ros.png" alt="Preview: Optimizing Communication in ROS 2" class="paper-preview" />
+              <span class="paper-preview-label">View on IEEE Xplore</span>
+            </a>
+            <div class="paper-body">
+              <div class="paper-tags">
+                <span class="paper-tag">Co-Author</span>
+                <span class="paper-tag">IEEE SPACE 2025</span>
+              </div>
+              <h3>Optimizing Communication in ROS 2 With QoS Parameters for System Advantages</h3>
+              <p class="paper-summary">2025 IEEE Space, Aerospace and Defence Conference (SPACE) · Bangalore, India · 21–23 July 2025</p>
+              <dl class="paper-facts">
+                <div><dt>DOI</dt><dd>10.1109/SPACE65882.2025.11171196</dd></div>
+                <div><dt>Publisher</dt><dd>IEEE</dd></div>
+              </dl>
+              <details class="paper-details-toggle">
+                <summary>More details</summary>
+                <dl class="paper-facts paper-facts-extra">
+                  <div><dt>Added to Xplore</dt><dd>25 September 2025</dd></div>
+                  <div><dt>ISBN</dt><dd>Available on IEEE Xplore page</dd></div>
+                </dl>
+              </details>
+              <a class="btn paper-link" href="https://ieeexplore.ieee.org/document/11171196" target="_blank" rel="noopener">Read Paper</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="awards" class="view">
+        <h2 class="section-title">Awards &amp; Certifications</h2>
+        <p class="section-lead">Recognition, scholarships, and professional credentials.</p>
+        <div class="awards-layout">
+          <article class="awards-block">
+            <h3>Awards &amp; Scholarships</h3>
+            <ul class="awards-list">
+              <li>
+                <strong>IRC Finalist</strong>
+                <span>Team Trixanth — Finalists in IRC for 2024–2025 and 2025–2026.</span>
+              </li>
+              <li>
+                <strong>KSCST SPP</strong>
+                <span>Project selected for research funding under Karnataka State Council for Science and Technology.</span>
+              </li>
+              <li>
+                <strong>IEEE Women in Engineering Scholarship</strong>
+                <span>Received for two consecutive years (INR 50,000/year) with IEEE course benefits.</span>
+              </li>
+            </ul>
+          </article>
+          <article class="certs-block">
+            <h3>Certifications</h3>
+            <ul class="certs-list">
+              <li><span class="cert-org">IEEE Blended Learning</span>Embedded Linux for IoT Systems</li>
+              <li><span class="cert-org">IEEE Blended Learning</span>Machine Learning</li>
+              <li><span class="cert-org">Infosys Springboard</span>Linux for Beginners · Linux Practical: App Development with Linux</li>
+              <li><span class="cert-org">Infosys Springboard</span>Introduction to NLP, AI, Data Science, Deep Learning</li>
+              <li><span class="cert-org">Infosys Springboard</span>Introduction to Robotic Process Automation</li>
+              <li><span class="cert-org">Wadhwani Foundation</span>Career Bridge: Learn, Grow and Collaborate</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -291,14 +328,14 @@
     <script>
       const sidemenu = document.getElementById("sidemenu");
       function openmenu() { sidemenu.style.right = "0"; }
-      function closemenu() { sidemenu.style.right = "-230px"; }
+      function closemenu() { sidemenu.style.right = "-260px"; }
 
       const views = [...document.querySelectorAll(".view")];
       const navLinks = [...document.querySelectorAll("[data-view]")];
       let currentIndex = 0;
 
       function animateViewCards(viewEl) {
-        const cards = viewEl.querySelectorAll(".skills-grid article, .about-card, .project-card, .timeline article, .split-grid article");
+        const cards = viewEl.querySelectorAll(".skills-grid article, .about-card, .project-card, .timeline article, .paper-card, .awards-block, .certs-block");
         cards.forEach((card, i) => {
           card.style.setProperty("--d", `${i * 70}ms`);
           card.classList.remove("reveal-card", "card-in");
